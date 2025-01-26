@@ -161,18 +161,6 @@ int main()
                     printf("\nUser not found. Returning to main menu...");
                     break; 
                 }
-                int num_posts = post_counter(display_user);
-                if(num_posts == 0){
-                    printf("\nUser has no posts. Returning to main menu...");
-                    break;
-                }
-                printf("\nPrinting %s's posts...", display_user->username);
-                if(num_posts <= 3){
-                    display_all_user_posts(display_user);
-                    printf("\nPrinted all posts. Returning to main menu...");
-                    break;
-                }
-                printf("\nList of %s's posts: \n", display_user->username);
                 display_posts_by_n(display_user, 3);
                 printf("\nReturning to main menu...");
                 break;
